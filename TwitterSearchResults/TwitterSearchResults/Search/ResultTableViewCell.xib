@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="135" id="KGk-i7-Jjw" customClass="ResultTableViewCell" customModule="TwitterSearchResults" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="135"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="EM9-51-mTW" userLabel="userIcon">
+                        <rect key="frame" x="8" y="8" width="38" height="38"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="38" id="74x-xY-baA"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TwitterText" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="A92-T0-PA5" userLabel="text">
+                        <rect key="frame" x="8" y="56" width="304" height="71"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Username" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RvY-Yb-AH3" userLabel="username">
+                        <rect key="frame" x="68" y="16" width="237" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="Zj2-q7-puf"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="A92-T0-PA5" secondAttribute="bottom" constant="-1" id="2h3-5i-nPp"/>
+                    <constraint firstItem="EM9-51-mTW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="5os-Kz-8cZ"/>
+                    <constraint firstItem="A92-T0-PA5" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="7zT-Er-Hzc"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="RvY-Yb-AH3" secondAttribute="trailing" constant="7" id="8Vw-IY-Ur1"/>
+                    <constraint firstItem="A92-T0-PA5" firstAttribute="top" secondItem="EM9-51-mTW" secondAttribute="bottom" constant="10" id="H0x-NF-t8Z"/>
+                    <constraint firstItem="A92-T0-PA5" firstAttribute="top" secondItem="RvY-Yb-AH3" secondAttribute="bottom" constant="19" id="TMC-AT-nTG"/>
+                    <constraint firstItem="EM9-51-mTW" firstAttribute="centerY" secondItem="RvY-Yb-AH3" secondAttribute="centerY" id="lNo-9r-cmo"/>
+                    <constraint firstItem="RvY-Yb-AH3" firstAttribute="leading" secondItem="EM9-51-mTW" secondAttribute="trailing" constant="22" id="p93-kI-o7Q"/>
+                    <constraint firstItem="EM9-51-mTW" firstAttribute="leading" secondItem="A92-T0-PA5" secondAttribute="leading" id="uAO-TC-AH3"/>
+                    <constraint firstItem="EM9-51-mTW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="xcW-bV-mV8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="twitterText" destination="A92-T0-PA5" id="qzu-E4-cx1"/>
+                <outlet property="userIcon" destination="EM9-51-mTW" id="faX-x3-Mvz"/>
+                <outlet property="userName" destination="RvY-Yb-AH3" id="o1Q-SE-FLK"/>
+            </connections>
+            <point key="canvasLocation" x="60" y="26.5"/>
+        </tableViewCell>
+    </objects>
+</document>

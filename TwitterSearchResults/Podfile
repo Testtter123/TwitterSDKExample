@@ -1,0 +1,4 @@
+use_frameworks!
+target 'TwitterSearchResults’ do
+	pod "Kingfisher"
+end

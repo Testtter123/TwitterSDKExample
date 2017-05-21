@@ -1,0 +1,10 @@
+framework module TwitterSearch {
+  umbrella header "TwitterSearch.h"
+
+  export *
+  module * { export * }
+}
+
+module TwitterSearch.Swift {
+    header "TwitterSearch-Swift.h"
+}
